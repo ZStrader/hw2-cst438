@@ -14,12 +14,12 @@ export class ImageapiService {
       'Api-Key' : environment.gettyKey
       })
     };
-    const gettyUrl = 'https://api.gettyimages.com/v3/search/images?phrase=cat';
+    const gettyUrl = 'https://api.gettyimages.com/v3/search/images?phrase=cool';
     return this.httpClient.get(gettyUrl, httpOptions);
   }
   
   getGiphyImages( ) {
-    const giphyUrl = 'https://api.giphy.com/v1/gifs/random?api_key='+environment.giphyKey+'&tag='+environment.keyword+'&rating=PG-13'
+    const giphyUrl = 'https://microservice-hw.herokuapp.com/car';
     return this.httpClient.get(giphyUrl);
   }
 }

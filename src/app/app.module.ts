@@ -12,8 +12,8 @@ import { SquadService } from './services/squad.service';
 import { AboutComponent } from './components/about/about.component';
 
 const appRoutes: Routes = [
-  { path: '', component: UserComponent },
-  { path: 'about', component: AboutComponent }
+  { path: 'about', component: UserComponent },
+  { path: '', component: AboutComponent }
 ];
 
 @NgModule({
